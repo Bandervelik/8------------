@@ -172,7 +172,7 @@
                     <div class="panel-group accordion">
                         <div class="panel panel-default open">
                             <div class="panel-heading">
-                                <h4 class="panel-title accordion-toggle"  >
+                                <h4 class="panel-title accordion-toggle" href="#collapse1" data-toggle="collapse" data-parent="#accordion">
                                     <a href="#collapse1" data-toggle="collapse" data-parent="#accordion">Розташування</a>
                                 </h4>
                             </div>
@@ -182,7 +182,7 @@
                         </div>
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                <h4 class="panel-title accordion-toggle"   >
+                                <h4 class="panel-title accordion-toggle" href="#collapse2" data-toggle="collapse" data-parent="#accordion">
                                     <a href="#collapse2" data-toggle="collapse" data-parent="#accordion">Комфортні номери</a>
                                 </h4>
                             </div>
@@ -192,7 +192,7 @@
                         </div>
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                <h4 class="panel-title accordion-toggle" >
+                                <h4 class="panel-title accordion-toggle" href="#collapse3" data-toggle="collapse" data-parent="#accordion">
                                     <a href="#collapse3" data-toggle="collapse" data-parent="#accordion">Ресторан та кухня</a>
                                 </h4>
                             </div>
@@ -244,14 +244,22 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                    <div class="testimonial-slider-page-controls"></div>
-                </div>
-            </div>
-
+                </div>                    
+            </div>        
         </div>
-    </section>
-
+    </div>        
+</section>
+        <div class="center-container">
+            <button onclick="openModal()" class="button" class="buron" >Залишити відгук</button>
+        </div> 
+        <div class="modal" id="myModal">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal()">&times;</span>
+              <p class="buping">Чи бажаєте заповнити форму для надсилання відгуку?</p>
+              <a href="https://forms.gle/jCpMkb9q9CJkDotn8" class="button">Так</a>
+              <button onclick="closeModal()"class="buton">Ні</button>
+            </div>
+          </div>
     <footer>
         <div class="container">
             <div class="row">

@@ -3172,9 +3172,12 @@ footer .copyright-area i {
   #main-slider .page-controls {
     bottom: 30px !important;
   }
-  .section-rooms .room-container .button {
+  .buton {
     width: 80%;
   }
+  .section-rooms .room-container .button {
+    width: 80%;
+  }  
   .section-from-blog .blog-box {
     margin-bottom: 10px;
   }
@@ -3293,7 +3296,6 @@ iframe.fullheight {
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.5);
 }
-
 .modal-content {
   background-color: #fefefe;
   position: absolute;
@@ -3305,14 +3307,12 @@ iframe.fullheight {
   width: 40%; /* Доданий обмеження на максимальну ширину */
   text-align: center;
 }
-
 .close {
   color: #aaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
 }
-
 .close:hover,
 .close:focus {
   color: black;
@@ -3325,28 +3325,45 @@ iframe.fullheight {
   cursor: pointer;
   font-size: 21px;
 }
-.buton {
-  background-color: #FA8D62;
-  color: #ffffff;
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
-  white-space: nowrap;
-  display: inline-block;
-  width: 180px;
-  height: 40px;
-  padding: 5px 12px;
-  border: 2px solid #B2DBD5;
-  border-radius: 90px;
-  vertical-align: middle;
-  -webkit-transition: background-color 0.3s, color 0.3s;
-  -moz-transition: background-color 0.3s, color 0.3s;
-  -o-transition: background-color 0.3s, color 0.3s;
-  transition: background-color 0.3s, color 0.3s;
-}
 html {
   scroll-behavior: smooth;
 }
-
+.buton:hover, .buton:focus, .buton:active {
+    color: #2B616D;
+    background-color: transparent;
+}
+a:focus, a:hover {
+    text-decoration: none;
+}
+a:focus, a:hover {
+    color: #23527c;
+    text-decoration: underline;
+}
+a:active, a:hover {
+    outline: 0;
+}
+.buton {
+    background-color: #FA8D62;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+    display: inline-block;
+    width: 180px;
+    height: 40px;
+    padding: 5px 12px;
+    border: 2px solid #B2DBD5;
+    border-radius: 90px;
+    vertical-align: middle;
+    -webkit-transition: background-color 0.3s, color 0.3s;
+    -moz-transition: background-color 0.3s, color 0.3s;
+    -o-transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
+}
+ .center-container {
+  text-align: center;
+  padding-bottom: 50px;
+}
