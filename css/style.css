@@ -3283,7 +3283,7 @@ iframe.fullheight {
   border-radius: 20px;
 }
 .modal {
-  display: none; /* Початково приховуємо модальне вікно */
+  display: none;
   position: fixed;
   z-index: 1;
   left: 0;
@@ -3296,10 +3296,14 @@ iframe.fullheight {
 
 .modal-content {
   background-color: #fefefe;
-  margin: 15% auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   padding: 20px;
   border: 1px solid #888;
-  width: 80%;
+  width: 40%; /* Доданий обмеження на максимальну ширину */
+  text-align: center;
 }
 
 .close {
@@ -3314,4 +3318,34 @@ iframe.fullheight {
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+.buping {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 21px;
+}
+.buton {
+  background-color: #FA8D62;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+  display: inline-block;
+  width: 180px;
+  height: 40px;
+  padding: 5px 12px;
+  border: 2px solid #B2DBD5;
+  border-radius: 90px;
+  vertical-align: middle;
+  -webkit-transition: background-color 0.3s, color 0.3s;
+  -moz-transition: background-color 0.3s, color 0.3s;
+  -o-transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s;
+}
+html {
+  scroll-behavior: smooth;
 }
